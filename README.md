@@ -9,3 +9,6 @@ Projeto para resolução de alguns desafios.
 * Creepy hours
 * We are the champions, my friend
 * Venting the costs
+
+### Pré-requisitos
+É necessário ter a JDK 11 instalada
