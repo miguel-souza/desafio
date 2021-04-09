@@ -47,8 +47,8 @@ public class Desafio {
 
     public  long obterHorasAssustadoras(List<String> padroes, List<String> horas){
         long totalHorasAssustadoras = horas.stream().mapToLong(hora -> {
-            boolean var = padroes.stream().anyMatch(p -> Pattern.matches(p, hora));
-            return (var ? 1L : 0L);
+            boolean horaAssustadora = padroes.stream().anyMatch(p -> Pattern.matches(p, hora));
+            return (horaAssustadora ? 1L : 0L);
         }).sum();
 
         return totalHorasAssustadoras;
